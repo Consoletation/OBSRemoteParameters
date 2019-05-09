@@ -1,0 +1,10 @@
+﻿{
+	"button_readme": {
+		"type": "button",
+		"label": "Open ReadMe File",
+		"tooltip": "Opens the readme of this script.",
+		"function": "OpenReadMe",
+		"wsevent": "",
+		"group": ""
+	}
+}
