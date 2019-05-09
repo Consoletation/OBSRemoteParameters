@@ -1,0 +1,24 @@
+--------------------------------------------
+Parameter(s)
+--------------------------------------------
+
+$OBSstop
+
+
+--------------------------------------------
+Description
+--------------------------------------------
+
+This parameter will try to let OBS stop the stream.
+Use this only for trusted parties, that can shut down
+the stream in case of an emergency.
+
+
+--------------------------------------------
+Command examples
+--------------------------------------------
+
+command:  !emergencystop
+response: $OBSstop
+
+    -- Stops streaming when using !emergencystop

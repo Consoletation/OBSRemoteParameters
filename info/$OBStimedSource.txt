@@ -1,0 +1,42 @@
+--------------------------------------------
+Parameter(s)
+--------------------------------------------
+
+$OBStimedSource("<source>", "<seconds>")
+$OBStimedSource("<source>", "<seconds>", "<scene>")
+
+
+--------------------------------------------
+Description
+--------------------------------------------
+
+Enables a source for a set period of time and then disables the source again in
+the current scene if no scene is given. If the scene name is given it tries to
+enable the given source in that scene, regardless if the scene or source exists.
+
+  <source name>
+
+    The source name to be enabled for a set period of time
+    Cannot be empty and is case sensitive as it needs to match the name
+    in OBS but can contain any character except (') or double (") quotes.
+
+  <seconds>
+
+    The timespan of seconds the given source needs to be enabled before
+    automatically being disabled again.
+
+  <scene name>
+
+    Is case sensitve as it needs to match the name in OBS but can contain any
+    character except single (') or double (")	quotes. If none is given it will
+    try to set the rendered state in the current active scene.
+
+
+--------------------------------------------
+Command examples
+--------------------------------------------
+
+command:  !fireworks
+response: $OBStimedSource("fireworks-gif", "20")
+
+    -- shows the 'fireworks-gif' source for 20 seconds when using !fireworks

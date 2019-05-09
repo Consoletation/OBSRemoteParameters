@@ -1,0 +1,39 @@
+--------------------------------------------
+Parameter(s)
+--------------------------------------------
+
+$OBStimedScene("<scene1>", "<scene2>", "<seconds>")
+
+
+--------------------------------------------
+Description
+--------------------------------------------
+
+Swaps to a given scene (scene1) then after a given amount of seconds it will
+swap to the other given scene (scene2). Currently it is impossible to swap to
+the previous active scene as the script cannot get this information prior.
+
+  <scene1>
+
+    Is case sensitve as it needs to match the name in OBS but can contain any
+    character except single (') or double (")	quotes.
+
+  <scene2>
+
+    Is case sensitve as it needs to match the name in OBS but can contain any
+    character except single (') or double (")	quotes.
+
+  <seconds>
+
+    The timespan of seconds the first given scene is acitve before it is
+    swapped out with the second given scene.
+
+--------------------------------------------
+Command examples
+--------------------------------------------
+
+command:  !break
+response: $OBStimedScene("break", "main", "300")
+
+    -- will swap to the scene called 'break' and after 5 minutes swap to
+       the scene called 'main'.
